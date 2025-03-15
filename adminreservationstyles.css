@@ -1,0 +1,275 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4f6633;
+}
+
+
+.sidebar {
+    width: 270px;
+    background: white;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    color: #4f6633;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-img {
+    width: 90px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.admin-name {
+    background-color: #5e7d3a;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.admin-email {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    background-color: #5e7d3a;
+    padding: 5px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul li.active, .sidebar ul li:hover {
+    background-color: #87a96b;
+    color: white;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #4f6633;
+    font-size: 14px;
+    width: 100%;
+}
+
+.footer {
+    margin-top: auto;
+    text-align: center;
+    background: #5e7d3a;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cite-logo {
+    width: 30px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.main-content {
+    flex-grow: 1;
+    background: #4f6633;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #87a96b;
+    color: white;
+    border-radius: 10px;
+}
+
+.header-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.notif-btn, .logout-btn {
+    background-color: #4f6633;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.reservations-container {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-gallery {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.event-card img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.event-card img:hover {
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #87a96b;
+    color: white;
+}
+
+.pending { color: #f4a000; font-weight: bold; }
+.approved { color: #2b8a3e; font-weight: bold; }
+.rejected { color: #d9534f; font-weight: bold; }
+.canceled { color: #6c757d; font-weight: bold; }
+
+.action-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Modal Styling for Reservation Status */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal-buttons button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.approved-btn { background-color: #2b8a3e; color: white; }
+.pending-btn { background-color: #f4a000; color: white; }
+.rejected-btn { background-color: #d9534f; color: white; }
+.canceled-btn { background-color: #6c757d; color: white; }
+
+.approved-btn:hover { background-color: #256c2c; }
+.pending-btn:hover { background-color: #d48b00; }
+.rejected-btn:hover { background-color: #b52a2a; }
+.canceled-btn:hover { background-color: #5a6268; }
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+}

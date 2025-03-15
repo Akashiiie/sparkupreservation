@@ -1,0 +1,203 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4f6633;
+}
+
+.sidebar {
+    width: 270px;
+    background: white;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    color: #4f6633;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-img {
+    width: 90px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.admin-name {
+    background-color: #5e7d3a;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.admin-email {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    background-color: #5e7d3a;
+    padding: 5px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul li.active, .sidebar ul li:hover {
+    background-color: #87a96b;
+    color: white;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #4f6633;
+    font-size: 14px;
+    width: 100%;
+}
+
+.footer {
+    margin-top: auto;
+    text-align: center;
+    background: #5e7d3a;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cite-logo {
+    width: 30px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.main-content {
+    flex-grow: 1;
+    background: #4f6633;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #87a96b;
+    color: white;
+    border-radius: 10px;
+}
+
+.header-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.notif-btn, .logout-btn {
+    background-color: #4f6633;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard-container {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-box {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background: #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.events-container, .pending-events {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.event-card, .pending-card, .upcoming-card, .chat-box {
+    flex: 1;
+    height: 120px;
+    background: #ddd;
+    border-radius: 10px;
+}
+
+.upcoming-events {
+    background: #4f6633;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
