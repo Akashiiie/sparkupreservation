@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/Profile"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/Profilesss"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/profilepicture"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="4dp"/>
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_below="@id/Profilesss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark Anthony Lafuente"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mato.lafuente.up@phinmaed.com"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/user_college"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="College of Information Technology Education"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/Email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/Course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bachelor of Science in Information Technology"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/user_college"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ProfileBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/Course">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_edit"
+                android:background="@color/black"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_add"
+                android:background="@color/black"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/ProfileBtn"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_lock_power_off"
+                android:background="@color/black"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log out"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_more"
+                android:background="@color/black"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

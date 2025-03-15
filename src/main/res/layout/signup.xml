@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/signupmm"
+    android:background="@color/black"
+    tools:context=".Signup">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imglogo"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:src="@drawable/img_1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/Name"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:hint="Name:"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_corner"
+            android:paddingStart="20dp"
+            app:layout_constraintTop_toBottomOf="@id/imglogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/PhinmaedEmail"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:hint="Phinmaed Email:"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:background="@drawable/rounded_corner"
+            android:paddingStart="20dp"
+            app:layout_constraintTop_toBottomOf="@id/Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/StudentNumber"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:hint="Student Number:"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_corner"
+            android:paddingStart="20dp"
+            app:layout_constraintTop_toBottomOf="@id/PhinmaedEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/Department"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:hint="Department:"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_corner"
+            android:paddingStart="20dp"
+            app:layout_constraintTop_toBottomOf="@id/StudentNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/Program"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:hint="Program:"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:paddingStart="20dp"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintTop_toBottomOf="@id/Department"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:hint="Password:"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:paddingStart="20dp"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintTop_toBottomOf="@id/Program"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/ConfirmPassword"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:hint="Confirm Password:"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:paddingStart="20dp"
+            app:layout_constraintTop_toBottomOf="@id/Password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/SignUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toBottomOf="@id/ConfirmPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/SignUp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Have An Account?"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tvSignin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Sign In"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingStart="6dp"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
